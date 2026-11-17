@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "test": "node --test src/bookingRules.test.mjs",
+    "test": "node --experimental-strip-types --test src/bookingRules.test.mjs src/findFreeSlots.test.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
